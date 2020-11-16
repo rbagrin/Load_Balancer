@@ -1,4 +1,5 @@
 # Load Balancer - Performance Evaluation - assignment
+[Full assignment](https://ocw.cs.pub.ro/courses/ep/teme/01)
 
 ## Context
 In the last years, the number of Internet users has seen an unprecedented growth. Whether these users are human beings or machines (IoT devices, bots, other services, mobile clients etc.) they place a great burden on the systems they are requesting services from. As a consequence, the administrators of those systems had to adapt and come up with solutions for efficiently handling the increasing traffic. In this assignment, we will focus on one of them and that is **load balancing**.
@@ -26,3 +27,9 @@ In order to simulate a real-world environment in which the **requested services*
 
 ## Implementation
 You have to implement the **command unit** component of the **load balancer** in **Python 3** and deploy it locally. Having a number of requests **N** as input, try various strategies of calling the **3 endpoints** available on the **forwarding unit** so that your clients experiment response times as low as possible. There are no constraints applied to how you read the number of requests, what Python library you use to call the forwarding unit or how you plot the results.
+
+However, we strongly suggest you to work in a **virtual environment** where you install all your **pip dependencies**. By doing so, you will keep your global workspace free of useless packages and you can easily specify just those packages required to run your code:
+```bash
+pip freeze > requirements.txt
+```
+Please note that we will definitely apply penalties if the **requirements.txt** file contains packages that are not used. Always imagine that you are in a real production environment.
